@@ -1,1 +1,10 @@
-<h1>Single Project Template</h1>
+{% extends 'main.html' %}
+
+{% block content %}
+  <h1>{{ project.title }}</h1>
+
+  {% for tag in tags %}
+    <p>{{ tag.name }}</p>
+  {% endfor %}
+{% endblock content%}
+
