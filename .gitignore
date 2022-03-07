@@ -1,1 +1,6 @@
 .env
+
+# Ignore all except default and logo
+static/images/*
+!static/images/default.jpg
+!static/images/logo.svg
