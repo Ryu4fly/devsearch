@@ -1,4 +1,5 @@
 .env
+index.html
 
 # Ignore all except default and logo
 static/images/*
