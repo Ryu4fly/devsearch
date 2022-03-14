@@ -6,6 +6,7 @@ from django.shortcuts import render, redirect
 
 from .forms import CustomUserCreationForm, ProfileForm, SkillForm
 from .models import Profile
+from .utils import searchProfiles
 
 def loginUser(request):
   if request.user.is_authenticated:
@@ -59,8 +60,12 @@ def registerUser(request):
   return render(request, 'users/login_register.html', context)
 
 def profiles(request):
-  profiles = Profile.objects.all()
-  context = {'profiles': profiles}
+  profiles, search_query = searchProfiles(request)
+
+  context = {
+    'profiles': profiles,
+    'search_query': search_query
+    }
 
   return render(request, 'users/profiles.html', context)
 
