@@ -21,6 +21,7 @@ class ReviewSerializer(serializers.ModelSerializer):
     model = Review
     fields = '__all__'
 
+
 class ProjectSerializer(serializers.ModelSerializer):
   owner = ProfileSerializer(many=False)
   tags = TagSerializer(many=True)
