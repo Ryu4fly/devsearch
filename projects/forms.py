@@ -6,7 +6,7 @@ from .models import Project, Review
 class ProjectForm(ModelForm):
   class Meta:
     model = Project
-    exclude = [ 'owner', 'vote_ratio', 'vote_total']
+    exclude = [ 'owner', 'vote_ratio', 'vote_total', 'tags' ]
     widgets = {
       'tags': forms.CheckboxSelectMultiple()
     }

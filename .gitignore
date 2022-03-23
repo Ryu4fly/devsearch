@@ -1,6 +1,5 @@
 .env
-index.html
-
+frontend-api-demo/
 # Ignore all except default and logo
 static/images/*
 !static/images/default.jpg
