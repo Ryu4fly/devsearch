@@ -1,4 +1,3 @@
-from turtle import left
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db.models import Q
 from .models import Profile, Skill
