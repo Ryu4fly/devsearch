@@ -53,9 +53,6 @@ INSTALLED_APPS = [
     'storages'
 ]
 
-import matplotlib
-matplotlib.use('Agg')
-
 REST_FRAMEWORK = {
   'DEFAULT_AUTHENTICATION_CLASSES': (
     'rest_framework_simplejwt.authentication.JWTAuthentication',
