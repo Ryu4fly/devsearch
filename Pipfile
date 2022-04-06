@@ -15,7 +15,6 @@ psycopg2 = "*"
 django-storages = "*"
 boto3 = "*"
 gunicorn = "*"
-matplotlib = "*"
 
 [dev-packages]
 autopep8 = "*"
