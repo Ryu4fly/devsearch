@@ -2,6 +2,8 @@ import uuid
 from django.db import models
 from users.models import Profile
 
+import matplotlib
+matplotlib.use('Agg')
 
 class Project(models.Model):
   id = models.UUIDField(default=uuid.uuid4, primary_key=True, unique=True, editable=False)
