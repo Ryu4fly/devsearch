@@ -48,10 +48,14 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
 
     # 3rd party
+    'django_matplotlib',
     'rest_framework',
     'corsheaders',
     'storages'
 ]
+
+import matplotlib
+matplotlib.use('Agg')
 
 REST_FRAMEWORK = {
   'DEFAULT_AUTHENTICATION_CLASSES': (
