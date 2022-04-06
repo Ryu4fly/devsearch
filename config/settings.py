@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
 
     # 3rd party
-    'django_matplotlib',
     'rest_framework',
     'corsheaders',
     'storages'
